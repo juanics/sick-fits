@@ -6,6 +6,8 @@
 		"titleBar.inactiveBackground": "#FFC600CC",
 		"titleBar.border": "#FFC600"
 	},
+	"editor.fontSize": 16,
+	"prettier.useTabs": true,
 	"editor.formatOnSave": true,
 	"[javascript]": {
 		"editor.formatOnSave": false
