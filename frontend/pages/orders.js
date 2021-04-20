@@ -1,9 +1,13 @@
-import React from 'react';
+import Orders from "../components/Orders";
+import PleaseSignIn from "../components/PleaseSignIn";
+
 
 const OrdersPage = () => (
-   <div>
-      <p>orders</p>
-   </div>
+	<div>
+		<PleaseSignIn>
+			<Orders />
+		</PleaseSignIn>
+	</div>
 );
 
 export default OrdersPage;
