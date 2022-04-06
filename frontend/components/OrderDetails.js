@@ -33,7 +33,10 @@ const SINGLE_ORDER_QUERY = gql`
 	}
 `;
 
-const OrderDetails = (id) => {
+const OrderDetails = ({id}) => {
+
+	console.log("id llegando por props", id)
+
 	//el param con el que llego a la page, llega por props
 	const { data, error, loading } = useQuery(SINGLE_ORDER_QUERY, {
 		variables: {
@@ -58,7 +61,7 @@ const OrderDetails = (id) => {
 			</p>
 			<p>
 				<span>Total:</span>
-				<span>{order.total}</span>
+				<span>{formatMoney(order.total)}</span>
 			</p>
 			<p>
 				<span>Item count:</span>

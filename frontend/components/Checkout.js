@@ -83,8 +83,8 @@ const CheckoutForm = () => {
 
       console.log(order);
       router.push({
-			pathname: '/order/[oid]',
-			query: { oid: order.data.checkout.id },
+			pathname: '/order/[id]',
+			query: { id: order.data.checkout.id },
 		});
 
       closeCart();
